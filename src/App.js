@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import './App.css';
+import SearchIcon from './search.svg';
 
 // dc633a53
 
@@ -20,9 +21,15 @@ function App() {
 
   }, []);
   return (
-    <h1>
-      Hello, World
-    </h1>
+    <div className="app">
+      <h1>MovieLand</h1>
+
+      <div className='search'>
+        <input 
+        placeholder='Search for movies' 
+        value='Batman' />
+      </div>
+    </div>
   );
 }
 
